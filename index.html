@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="employee.css">
+  <title>Login Page</title>
+</head>
+
+<body>
+  <div class="login-page">
+    <div class="form">
+      <div class="login">
+        <div class="login-header">
+          <h3>Employee Registration Form</h3>
+          <p>Please enter your detailes.</p>
+        </div>
+      </div>
+      <form class="login-form">
+        <input id="eid" type="text" placeholder="Employee id" />
+        <input id="enam" type="text" placeholder="Employee Name" />
+        <input id="edes" type="text" placeholder="Designation" />
+        <input id="eexp" type="text" placeholder="Experience" />
+        <input id="esal" type="text" placeholder="Salary" />
+        <button type="button" onclick="addEmployee()">Add Employee</button>
+        <p class="message">Already registered? <a href="#">Login Here</a></p>
+      </form><HR>
+      <div class="search">
+        <div class="search-header">
+          <h3>Search Employee</h3>
+          <!-- <p>Please enter employee id.</p> -->
+        </div>
+        <form class="search-form">
+          <input id="search" type="text" placeholder="Employee id">
+          <button type="button" onclick="searchEmp()">Search</button>
+        </form>
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="./employee.js"></script>
+
+</html>
